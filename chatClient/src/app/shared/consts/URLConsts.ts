@@ -1,0 +1,1 @@
+export const PERSON_URL = "https://dummyjson.com/users/";
