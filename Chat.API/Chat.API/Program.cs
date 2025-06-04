@@ -23,3 +23,9 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.Run();
+
+/*using (var scope = app.Services.CreateScope())
+{
+    await SeedUsers.SeedUsersAsync(scope.ServiceProvider);
+}*/
+
