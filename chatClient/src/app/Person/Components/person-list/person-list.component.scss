@@ -1,0 +1,10 @@
+.person__list{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+    background-color:aqua;
+    width: 20%;
+    min-width: 300px;
+    border: solid gray 0.5px;
+}

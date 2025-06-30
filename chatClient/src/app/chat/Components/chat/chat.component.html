@@ -1,0 +1,12 @@
+@if (person) {
+    <div class="chat__container"> <!-- Новий контейнер -->
+        <app-person-header [person]="person"></app-person-header>
+  
+    <!-- Інші елементи чату (якщо є) -->
+  
+        <div class="chat__input">
+            <app-custom-input type="text" placeholder="Type..." />
+            <button class="send-button">Send</button>
+        </div>
+    </div>
+}

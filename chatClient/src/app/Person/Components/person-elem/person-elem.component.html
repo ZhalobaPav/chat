@@ -1,6 +1,6 @@
-<a class="person__link" routerLink="/users/{{person.id}}">
-  <div class="person__item">
+<button (click)="changeUser(person)">
+  <div class="person__item" [class.selected]="selected">
     <img class="person__image" src="assets/images/standart.png" alt="User">
-    <h1>{{person.username}}</h1>
+    <h1 class="person__name">{{person.username}}</h1>
   </div>
-</a>
+</button>

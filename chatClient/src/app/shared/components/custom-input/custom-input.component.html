@@ -1,1 +1,12 @@
-<p>custom-input works!</p>
+<div class="cu-form-group">
+    <div class="cu-input-container" [class]="labelPosition">
+        <input
+            type="text"
+            [(ngModel)]="value"
+            (input)="onChange(value)" 
+            class="main-input"
+            [placeholder]="placeholder"
+            />
+    </div>
+</div>
+    

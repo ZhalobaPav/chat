@@ -1,5 +1,9 @@
-@for (person of persons; track $index) {
-    <app-person-elem
-    [person]="person">
-    </app-person-elem>
-}
+<app-scroll-view>
+    <div class="person__list">
+        @for (person of persons; track $index) {
+            <app-person-elem
+            [person]="person">
+            </app-person-elem>
+        }
+    </div>    
+</app-scroll-view>

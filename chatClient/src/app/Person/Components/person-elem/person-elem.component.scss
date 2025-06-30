@@ -1,15 +1,55 @@
-.person__item{
+.person {
+  &__item {
     display: flex;
     align-items: center;
-}
-
-.person__item:hover{
+    gap: 1rem;
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    transition: all 0.2s ease-in-out;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
     cursor: pointer;
-    background-color: gray;
+    border: 1px solid #eaeaea;
+
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      background-color: #959da4;
+    }
+  }
+
+  &__image {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #eaeaea;
+  }
+
+  &__name {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
 }
 
-.person__image{
-    width: 40px;
-    height: 40px;
-    padding-right: 10px;
+button {
+  width: 100%;
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+  text-align: left;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.selected{
+  background-color: rgb(142, 142, 239);
 }

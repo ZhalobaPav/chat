@@ -1,0 +1,38 @@
+.person__detail {
+    position: fixed;
+    top:0;
+    left: 50%;
+    height: 100%;
+}
+
+.person__name {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.chat__container {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+}
+
+.chat__input{
+    position: fixed;
+    display: flex;
+    bottom: 0;
+    left:30%;
+    gap: 20px;
+    align-items: center;
+}
+
+.send-button{
+    background-color: #4285f4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    transition: background-color 0.3s;
+    height: 30px;
+    width: 80px;
+}

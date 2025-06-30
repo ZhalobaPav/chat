@@ -1,0 +1,29 @@
+
+:host {
+    ng-scrollbar {
+        &::before{
+            content: "";
+            z-index: 1;
+            position: absolute;
+            top:0;
+            height: 10px;
+            width: calc(100% - 14px);
+            background-color: linear-gradient(#f3f4f7, transperent);
+            pointer-events: none;
+        }
+        .ng-scrollbar-thumb{
+            background-color: gray;
+            transition: background-color 0.2 ease-in-out;
+            &:hover,
+            &:active{
+                background-color: black;
+            }
+            width: 6px;
+        }
+
+        .ng-scrollbar-track{
+            width: 6px o !important;
+            background: white;
+        }
+    }
+}
